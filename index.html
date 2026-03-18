@@ -7,9 +7,36 @@
     <title>Q4 Practice 2</title>
 </head>
 <body>
-    <h1>Switch Statement</h1>\
+    <h1>Switch Statement</h1>
+    <button class="btn btn-info" onclick="teamrank()">Rank</button>
 
     <script>
+        function teamrank(){
+            var rank = "1st";
+
+            var message="";
+
+            switch(true){
+                case(rank === "1st"):
+                message = "Champions";
+                break;
+                
+                case(rank === "2nd"):
+                message = "Second Placer";
+                break;
+
+                case(rank === "3rd"):
+                message = "Third Placer";
+                break;
+
+                case(rank === "4th"):
+                message = "Fourth Placer";
+                break;
+            }
+            alert(message);
+        }
+
+
         let team ="Green";//string
 
         switch(team){
